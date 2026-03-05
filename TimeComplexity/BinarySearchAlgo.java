@@ -15,5 +15,15 @@ public class BinarySearchAlgo {
             System.out.print(arr[i] + " ");
         }
 
+        // problem 2    Take an array of names as input from the user and print them on the screen.
+        int size = sc.nextInt();
+        String name [] = new String[size];
+        for (int i=0;i<size;i++){
+            name[i] =sc.next();
+        }
+        for (int i=0;i< name.length;i++){
+            System.out.println("name " + (i+1) + "is :" + name[i]);
+        }
+
     }
 }
