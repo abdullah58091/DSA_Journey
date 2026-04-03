@@ -1,5 +1,5 @@
 /*
-package com.company.Abstract_Classes_and_Interface;
+package com.company.OOPs.Abstract_Classes_and_Interface;
 abstract class pen{
      abstract void write();
      abstract  void refill();
@@ -38,7 +38,7 @@ public class Practicse_question {
 /*
 // problem 03
 
-package com.company.Abstract_Classes_and_Interface;
+package com.company.OOPs.Abstract_Classes_and_Interface;
 
 class Monkey {
       void jump(){
@@ -88,7 +88,7 @@ public class Practicse_question {
 
 // problem 04
  /*
-package com.company.Abstract_Classes_and_Interface;
+package com.company.OOPs.Abstract_Classes_and_Interface;
 
 
 abstract  class Telephone {
@@ -145,7 +145,7 @@ public class Practicse_question {
 
 // problem 05
  /*
-package com.company.Abstract_Classes_and_Interface;
+package com.company.OOPs.Abstract_Classes_and_Interface;
 
 class Monkey {
     void jump(){
@@ -192,7 +192,7 @@ public class Practicse_question {
 /*
 
   //  problem 06
-package com.company.Abstract_Classes_and_Interface;
+package com.company.OOPs.Abstract_Classes_and_Interface;
 
 interface TVRemote {
     void powerOn();

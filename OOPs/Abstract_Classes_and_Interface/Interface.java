@@ -1,4 +1,4 @@
-package com.company.Abstract_Classes_and_Interface;
+package com.company.OOPs.Abstract_Classes_and_Interface;
 
 
 interface   Bicylce {

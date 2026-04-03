@@ -1,4 +1,4 @@
-package com.company.Abstract_Classes_and_Interface;
+package com.company.OOPs.Abstract_Classes_and_Interface;
 abstract class parents2{
     public parents2(){
         System.out.println(" this is a base 2 constructor ");
