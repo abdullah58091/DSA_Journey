@@ -41,7 +41,7 @@ public class arrayList {
         int size = num.size();
         System.out.println(size);
 
-        //loops
+        //loops   -- THIS KEYWORD ARE ITERATE
 
         for (int i = 0; i < num.size();i++){
             System.out.print(num.get(i));
