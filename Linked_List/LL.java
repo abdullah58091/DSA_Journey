@@ -4,15 +4,15 @@ public class LL {
     Node head;
     private  int size ;
 
-    LL(){
+     LL(){
         this.size = 0;
     }
 
 class  Node {
 
-    String data ;
+    Object data ;
     Node Next ;
-    Node(String data){
+    Node(Object data){
         this.data = data;
         this.Next = null;
         size++;
@@ -20,7 +20,7 @@ class  Node {
 }
 
 // add - first ,last
-public void AddFirst (String data) {
+public void AddFirst (Object data) {
     Node newNode = new Node(data);
     if(head == null){
         head = newNode;
@@ -31,7 +31,7 @@ public void AddFirst (String data) {
     head = newNode;
 }
 
-public void Addlast (String data){
+public void Addlast (Object data){
     Node newNode = new Node(data);
     if(head == null ){
         head = newNode;
@@ -96,6 +96,49 @@ public void Addlast (String data){
         return size;
      }
 
+     public void reverseIterate (){
+        if ( head == null || head.Next == null ) {
+            return;
+        }
+        Node prevNode = head ;
+        Node currNode = head.Next;
+        while (currNode != null){
+            Node nextNode = currNode.Next;
+            currNode.Next = prevNode;
+
+            // update
+             prevNode = currNode;
+             currNode = nextNode;
+        }
+
+        head.Next = null;
+        head = prevNode;
+     }
+
+
+     //Iterative Method
+    //Time complexity - O(n)
+    //Space complexity - O(1)
+
+
+    public  Node reversRecursion ( Node head) {
+
+         if (head ==  null || head.Next == null){
+             return head;
+         }
+         Node newHead = reversRecursion(head.Next);
+         head.Next.Next= head;
+         head.Next = null;
+
+         return newHead;
+    }
+
+
+
+    //Recursive Method
+    //Time complexity - O(n)
+    //Space complexity - O(1)
+
     public static void main(String[] args) {
 
         LL list =  new LL();
@@ -118,6 +161,22 @@ public void Addlast (String data){
         System.out.println(list.getSize());
         list.AddFirst("this");
         System.out.println(list.getSize());
+
+        list.AddFirst(1);
+        list.AddFirst(2);
+        list.AddFirst(3);
+        list.AddFirst(4);
+
+        list.printList();
+
+        list.reverseIterate();
+        list.printList();
+
+        list.head = list.reversRecursion(list.head);
+        list.printList();
+
+
+
 
     }
 }

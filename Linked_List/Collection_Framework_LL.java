@@ -1,5 +1,6 @@
 package com.company.Linked_List;
 
+import java.util.Collections;
 import java.util.LinkedList;
 
 public class Collection_Framework_LL {
@@ -27,5 +28,20 @@ public class Collection_Framework_LL {
 
         list.remove(1);
         System.out.println(list);
+
+        //Collections Method
+        //Time complexity - O(n)
+        //Space complexity - O(1)
+
+        LinkedList<Integer> list3 = new LinkedList<>();
+
+        list3.add(1);
+        list3.add(2);
+
+        System.out.println(" THIS IS ARRAY  ELEMENTS ");
+        System.out.println(list3);
+        System.out.println("THIS IS REVERSE  METHOD ");
+        Collections.reverse(list3);
+        System.out.println(list3);
     }
 }
