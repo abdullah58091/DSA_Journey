@@ -1,5 +1,5 @@
 package com.company.Linked_List;
-public class LL {
+public class  LL {
 
     Node head;
     private  int size ;
