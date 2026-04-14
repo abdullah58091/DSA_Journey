@@ -1,4 +1,4 @@
-package com.company.StringAndCalculatorQuestion;
+package com.company.String_DSA;
 
 import java.util.Scanner;
 

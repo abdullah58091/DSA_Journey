@@ -1,4 +1,4 @@
-package com.company.StringAndCalculatorQuestion;
+package com.company.String_DSA;
 
 public class String_DSA {
     public static void main(String[] args) {
