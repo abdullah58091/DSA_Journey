@@ -1,4 +1,4 @@
-package com.company.Arrays;
+// package com.company.Arrays;
 
 import java.util.Scanner;
 
@@ -49,7 +49,10 @@ public class Day_01_JavaDsa  {
 
 
         int numbers[] = new int[size];
+        System.out.println("HELLO)");
+
         for(int i=0; i<size; i++) {
+            System.out.print("HELLO)");
             numbers[i] = sc.nextInt();
         }
         boolean isAscending = true;
@@ -63,8 +66,5 @@ public class Day_01_JavaDsa  {
         } else {
             System.out.println("The array is not sorted in ascending order");
         }
-
-
-
     }
 }
