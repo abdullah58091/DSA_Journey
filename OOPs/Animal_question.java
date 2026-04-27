@@ -1,4 +1,4 @@
-package com.company.OOPs;
+
 class Animal2 {
     public void sound2() {
         System.out.println(" animal make sound ");

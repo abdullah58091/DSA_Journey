@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "C:/Users/Mohammad Abdullah/OneDrive/Desktop/StudentManagementSystem"
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"Recursion_dsa",
+			"Arrays",
+			"Arrays_Practice_Medium"
+		],
+		"java.debug.settings.onBuildFailureProceed": true,
+		"java.project.referencedLibraries": []
+	}
+}
