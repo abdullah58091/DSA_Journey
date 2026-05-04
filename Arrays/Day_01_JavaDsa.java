@@ -49,10 +49,10 @@ public class Day_01_JavaDsa  {
 
 
         int numbers[] = new int[size];
-        System.out.println("HELLO)");
+        System.out.println("HELLO, PLEASE ENTER " + size + " NUMBERS : ");
 
         for(int i=0; i<size; i++) {
-            System.out.print("HELLO)");
+            System.out.print("HELLO " + (i+1) + " : ");
             numbers[i] = sc.nextInt();
         }
         boolean isAscending = true;
