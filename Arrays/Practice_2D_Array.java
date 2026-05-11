@@ -1,6 +1,3 @@
-package com.company.Arrays;
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Practice_2D_Array {

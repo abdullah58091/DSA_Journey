@@ -1,5 +1,3 @@
-package com.company.Arrays;
-
 public class introductionofarray {
     public static void main(String[] args) {
 

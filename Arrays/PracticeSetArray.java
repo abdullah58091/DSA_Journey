@@ -1,5 +1,3 @@
-package com.company.Arrays;
-
 public class PracticeSetArray {
     public static void main(String[] args) {
         // QUESTION 01
