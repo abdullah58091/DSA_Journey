@@ -1,5 +1,3 @@
-package com.company.Backtracking_dsa;
-
 import java.util.ArrayList;
 import java.util.List;
 
