@@ -1,76 +1,60 @@
-package com.company.Grap_Dsa_Java.Grap_Travresal;
-
-import java.util.ArrayList;
-
+import java.util.Arrays;
 public class DFS {
-    static class  Edge {
-        int src;
-        int dest;
-        // wt it mean the graph is weighted from given then  use is wt
-        int wt;
+    public int maxJumps(int[] arr, int d) {
 
-        public Edge(int s, int d, int w) {
-            this.src = s;
-            this.dest = d;
-            this.wt = w;
+  
+        int n = arr.length;
+
+        int[] dp = new int[n];
+
+        Arrays.fill(dp, -1);
+
+        int ans = 1;
+
+        for (int i = 0; i < n; i++) {
+            ans = Math.max(ans, dfs(i, arr, d, dp));
         }
+
+        return ans;
     }
 
-        public static  void createGraph(ArrayList<Edge> graph[]){
-
-            for (int i =0;i< graph.length;i++){
-                graph[i] = new ArrayList<>();
-            }
-
-            graph[0].add(new Edge(0,1 , 1));
-            graph[0].add(new Edge(0, 2, 1));
-
-            graph[1].add(new Edge(1, 0, 1));
-            graph[1].add(new Edge(1, 3, 1));
-
-            graph[2].add(new Edge(2, 0, 1));
-            graph[2].add(new Edge(2, 4, 1));
-
-            graph[3].add(new Edge(3, 1, 1));
-            graph[3].add(new Edge(3, 4, 1));
-            graph[3].add(new Edge(3, 5, 1));
-
-            graph[4].add(new Edge(4, 2, 1));
-            graph[4].add(new Edge(4, 3, 1));
-            graph[4].add(new Edge(4, 5, 1));
-
-            graph[5].add(new Edge(5, 3, 1));
-            graph[5].add(new Edge(5, 4, 1));
-            graph[5].add(new Edge(5, 6, 1));
-
-            graph[6].add(new Edge(6, 5, 1));
+    public int dfs(int i, int[] arr, int d, int[] dp) {
 
 
+        if (dp[i] != -1) {
+            return dp[i];
         }
 
-        public  static void dfs (ArrayList<Edge> graph [],int curr ,boolean vis [] ){
-            if(vis [curr]) {
-                return;
+        int best = 1;
+
+     
+        for (int j = i - 1; j >= Math.max(0, i - d); j--) {
+
+        
+            if (arr[j] >= arr[i]) {
+                break;
             }
-            System.out.print(curr+" ");
-            vis[curr] = true;
-            for(int i=0; i<graph[curr].size(); i++) {
-                Edge e = graph[curr].get(i);
-                dfs(graph, e.dest, vis);
-            }
+
+            best = Math.max(best, 1 + dfs(j, arr, d, dp));
         }
 
+   
+        for (int j = i + 1; j <= Math.min(arr.length - 1, i + d); j++) {
 
+       
+            if (arr[j] >= arr[i]) {
+                break;
+            }
 
+            best = Math.max(best, 1 + dfs(j, arr, d, dp));
+        }
+
+        return dp[i] = best;
+    }
     public static void main(String[] args) {
-        int V = 7;
-        ArrayList<Edge> graph [] = new ArrayList[V];
-        createGraph(graph);
-
-        dfs(graph,0, new boolean[V]);
-        System.out.println();
-
+        DFS dfs = new DFS();
+        int[] arr = {6, 4, 14, 6, 8, 13, 9, 7, 10, 6, 12};
+        int d = 2;
+        System.out.println(dfs.maxJumps(arr, d));
     }
 }
-
-
