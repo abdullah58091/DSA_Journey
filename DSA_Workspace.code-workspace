@@ -17,6 +17,7 @@
 			"Arrays_Practice_Medium"
 		],
 		"java.debug.settings.onBuildFailureProceed": true,
-		"java.project.referencedLibraries": []
+		"java.project.referencedLibraries": [],
+		"liveServer.settings.multiRootWorkspaceName": "DSA_Journey"
 	}
 }
