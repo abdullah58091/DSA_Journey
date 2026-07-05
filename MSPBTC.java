@@ -1,5 +1,6 @@
-public MSPBTC() {
-    
+public class MSPBTC {
+
+    // Union-Find helper function
     int find(int[] root, int i) {
         if (root[i] == i)
             return i;
@@ -11,6 +12,7 @@ public MSPBTC() {
         for (int i = 0; i <= n; i++)
             root[i] = i;
 
+        // Union operation
         for (int[] r : roads)
             root[find(root, r[0])] = find(root, r[1]);
 
@@ -21,11 +23,13 @@ public MSPBTC() {
 
         return res;
     }
-    Public static void main(String[] args) {
+
+    public static void main(String[] args) {
         MSPBTC solution = new MSPBTC();
         int n = 4;
         int[][] roads = {{1, 2, 9}, {2, 3, 6}, {2, 4, 5}, {1, 4, 7}};
         int result = solution.minScore(n, roads);
-        System.out.println("Minimum score: " + result); // Output: Minimum score: 5
+        System.out.println("Minimum score: " + result); 
+        // Output: Minimum score: 5
     }
 }
