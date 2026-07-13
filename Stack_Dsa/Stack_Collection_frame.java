@@ -1,5 +1,3 @@
-package com.company.Stack_Dsa;
-
 import java.util.Stack;
 
 public class Stack_Collection_frame {
@@ -10,10 +8,14 @@ public class Stack_Collection_frame {
             list.push(3);
             list.push(4);
             list.push(5);
-
+            
+            
         while (!list.isEmpty()){
             System.out.println(list.peek());
             list.pop();
         }
     }
 }
+
+
+
