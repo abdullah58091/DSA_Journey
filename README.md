@@ -36,6 +36,7 @@ Welcome to my Data Structures and Algorithms (DSA) repository! This repository d
 - 💻 IntelliJ IDEA
 - 🖥️ Visual Studio Code
 - 🌱 Git & GitHub
+-     LeetCode
 
 ## 🎯 Goals
 
