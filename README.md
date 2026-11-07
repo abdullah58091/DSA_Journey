@@ -53,7 +53,7 @@ This repository is continuously updated as I learn new concepts, solve challengi
 ## 🌟 About Me
 
 **Mohammad Abdullah**  
-B.Tech CSE Student | Java Enthusiast | DSA Learner | Aspiring Software Engineer
+B.Tech CSE Student | Java Enthusiast | DSA Learner | DBMS | Aspiring Software Engineer
 
 ---
 
