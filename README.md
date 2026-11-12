@@ -1,6 +1,6 @@
 # 🚀 Mohammad Abdullah's DSA Journey in Java
 
-Welcome to my Data Structures and Algorithms (DSA) repository! This repository documents my learning journey, practice sessions, and progress toward building strong problem-solving and software development skills using Java.
+Welcome to my Data Structures and Algorithms (DSA) repository! This repository documents my learning journey, practice sessions, and progress toward building strong problem- solving and software development skills using Java.
 
 ## 📚 What's Inside?
 
