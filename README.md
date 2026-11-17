@@ -52,7 +52,7 @@ Welcome to my Data Structures and Algorithms (DSA) repository! This repository d
 
 This repository is continuously updated as I learn new concepts, solve challenging problems, and improve my understanding of algorithms and data structures.
 
-## 🌟 About Me
+## 🌟  About Me
 
 **Mohammad Abdullah**  
 B.Tech CSE Student | Java Enthusiast | DSA Learner |  DBMS Learner  | Aspiring Software Engineer !
