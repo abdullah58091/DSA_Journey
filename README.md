@@ -1,5 +1,5 @@
 # 🚀 Mohammad Abdullah
- B.Tech 
+ B.Tech (C.S.E) 
 
 # DSA Journey in Java
 
